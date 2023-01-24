@@ -1,0 +1,779 @@
+body {
+    height: 100vh;
+    width: 100%;
+    /* background-image: 
+        radial-gradient(
+            circle at 92% 9%,
+            rgba(190, 227, 255, 0.05) 3%,
+            rgba(8, 26, 33, 0.1) 68%
+            ); */
+    background-image: red;
+}
+
+
+/* .sekcia1, .sekcia2, .sekcia3, .sekcia4, .sekcia5 {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.gradient-bg {
+    background-image: 
+        radial-gradient(
+            circle at 92% 9%,
+            rgba(190, 227, 255, 0.95) 3%,
+            rgba(8, 26, 33, 1) 68%
+            );
+}
+.mesto-bg {
+    background-image: url(../img/intro-dalej70tiny.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section.section.sekcia1.mesto-bg > div {
+    opacity: 0;
+}
+
+.mesto-bg {
+    transition: background-size 2s ease-in;
+    -moz-transition: background-size 2s ease-in;
+    -web-kit-transition: background-size 2s ease-in;
+    animation-name: PohybBG1, PohybBG2;
+    animation-duration: 3.5s, 3.5s;
+    animation-iteration-count: 1, 1;
+    animation-delay: 1s, 1s;
+    animation-fill-mode: forwards;
+}   
+
+@keyframes PohybBG1 {
+    100% {
+       background-position: center;
+    }
+ }
+
+
+
+
+
+.logo {
+    height: 50vh;
+    /* width: 95%; */
+    /* margin: auto; */
+
+    background-image: 
+        url("../img/logo_part2.png"),
+        url("../img/logo_part3.png"),
+        url("../img/logo_part4.png"),
+        url("../img/logo_kruh.png")
+        ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    animation: gogo 1.7s ease-in-out 4s 1 normal forwards;
+}
+
+
+@keyframes gogo {
+    100% {
+       opacity: 1;;
+    }
+ }
+
+
+.gradient-bg-vv {
+    background-image: 
+        radial-gradient(
+            circle at 9% 92%,
+            rgba(190, 227, 255, 0.95) 3%,
+            rgba(8, 26, 33, 1) 68%
+            );
+}
+
+
+
+/* li {
+    border-bottom: solid 5px red;
+    width: 300px;
+} */
+
+li {
+    position: relative;
+}
+
+li::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: 0px; 
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 60%;
+    background: #fff;
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+}
+
+li:nth-child(1)::after, li:nth-child(5)::after {
+    left: -25px;
+    right: 25px;
+}
+
+li:nth-child(3)::after, li:nth-child(6)::after {
+    left:   25px;
+    right: -25px;
+}
+
+li:last-of-type:after {
+    content: none   ;
+}
+
+.li:hover::after {
+    width: 50%;
+    background: orange;
+}
+
+/* .li::after {
+    transform : scaleX(0);
+  }
+ .li:hover::after {
+    transform : scaleX(1);
+ } */
+
+
+.o-kpm, .miesto-kontakt {
+    color: #222;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.o-kpm:before {
+    content: "";
+    background-image:         
+        radial-gradient(
+            circle at 92% 9%,
+            rgba(190, 227, 255, 0.33) 3%,
+            rgba(8, 26, 33, 0.33) 68%
+        ), 
+        url('../img/zilina-04.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: 0;
+}
+
+.miesto-kontakt:before {
+    content: "";
+    background-image:         
+        radial-gradient(
+            circle at 92% 9%,
+            rgba(190, 227, 255, 0.23) 3%,
+            rgba(8, 26, 33, 0.23) 68%
+        ), 
+        url('../img/dom-odborov.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.slide {
+    position: relative;
+
+ 
+}
+
+.slide1:before, .slide2:before, .slide3:before {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+.slide1:before {
+    content: "";
+    background-image: 
+        radial-gradient( 
+            circle at 92% 9%, 
+            rgba(190, 227, 255, 0.2) 3%, 
+            rgba(8, 26, 33, 0.25) 68% 
+            ), 
+            url(../img/recnici-Majo-d.jpg);
+    
+    background-position: 72% 0%;
+}
+
+
+.slide2:before {
+    content: "";
+    background-image: 
+        radial-gradient( 
+            circle at 92% 9%, 
+            rgba(190, 227, 255, 0.2) 3%, 
+            rgba(8, 26, 33, 0.25) 68% 
+            ), 
+            url(../img/recnic-peta.jpg);
+    
+    background-position: 72% 0%;
+}
+
+.slide3:before {
+        content: "";
+    background-image: 
+        radial-gradient( 
+            circle at 92% 9%, 
+            rgba(190, 227, 255, 0.2) 3%, 
+            rgba(8, 26, 33, 0.25) 68% 
+            ), 
+            url(../img/parka.jpg);
+    
+    background-position: 72% 0%;
+}
+
+
+
+
+
+
+
+
+.program-slide1:before, .program-slide2:before, .program-slide3:before,.program-slide4:before {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+.program-slide1:before {
+    content: "";
+    background-image: 
+        radial-gradient( 
+            circle at 92% 9%, 
+            rgba(190, 227, 255, 0.5) 3%, 
+            rgba(8, 26, 33, 0.55) 68% 
+            ), 
+        url(../img/program-mobil1t.jpg);
+    background-position: 72% 0%;
+}
+
+
+.program-slide2:before {
+    content: "";
+    background-image: 
+        radial-gradient( 
+            circle at 8% 9%, 
+            rgba(190, 227, 255, 0.5) 3%, 
+            rgba(8, 26, 33, 0.55) 68% 
+            ), 
+        url(../img/program-mobil2t.jpg);
+    background-position: 72% 0%;
+}
+
+.program-slide3:before {
+    content: "";
+    background-image: 
+        radial-gradient( 
+            circle at 92% 9%, 
+            rgba(190, 227, 255, 0.5) 3%, 
+            rgba(8, 26, 33, 0.55) 68% 
+            ), 
+        url(../img/program-mobil3t.jpg);
+    background-position: 72% 0%;
+}
+
+.program-slide4:before {
+    content: "";
+    background-image: 
+        radial-gradient( 
+            circle at 8% 9%, 
+            rgba(190, 227, 255, 0.5) 3%, 
+            rgba(8, 26, 33, 0.55) 68% 
+            ), 
+        url(../img/program-mobil4t.jpg);
+    background-position: 72% 0%;
+}
+
+
+.registracia-slide1:before, .registracia-slide2:before {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+.registracia-slide1:before {
+    content: "";
+background-image: 
+    radial-gradient( 
+        circle at 92% 9%, 
+        rgba(190, 227, 255, 0.2) 3%, 
+        rgba(8, 26, 33, 0.25) 68% 
+        ), 
+        url(../img/registracia.jpg);
+
+background-position: top center;
+}
+
+.registracia-slide2:before {
+    content: "";
+background-image: 
+    radial-gradient( 
+        circle at 92% 9%, 
+        rgba(190, 227, 255, 0.2) 3%, 
+        rgba(8, 26, 33, 0.25) 68% 
+        ), 
+        url(../img/registracia.jpg);
+
+background-position: top right;
+}
+
+
+
+
+
+
+
+.jadro-popis {
+    z-index: 3;
+    position: relative;
+    width: 66%;
+}
+
+.o-kpm h1 {
+    text-align: center;
+    color: #fff;
+    top: 20px;
+}
+
+.o-kpm p, .recnici p, .miesto-kontakt p {
+    position: relative;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+
+    width: 100%; /* ? */
+    margin: 0 auto;
+    padding: 18px 15px 20px 20px;
+}
+
+
+.o-kpm p::before, .recnici p::before {
+    content: "";
+    position: absolute;
+}
+
+.o-kpm p::before, .miesto-kontakt p::before {
+    content: "";
+    top: -15px;
+    left: 15px;
+    right: -15px;
+    bottom: 15px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.recnici p::before {
+    top: -15px;
+    left: -15px;
+    right: 15px;
+    bottom: 15px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+}
+
+.slniecko {
+    position: absolute;
+
+    background-image: url("../img/slniecko.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    z-index: 2;
+}
+
+.slnko {
+    width: 35%;
+    height: auto;
+    position: absolute;
+    top: 27%;
+    left: -7%;
+
+    background-image: url("../img/slniecko.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+    
+
+.slniecko-okpm {
+    bottom: -65%;
+    left: -135%;
+    width: 90vh;
+    height: 90vh;
+}
+
+.slniecko-recnik {
+    bottom: -55%;
+    left: -5%;
+    width: 60vh;
+    height: 60vh;
+}
+
+
+.recnici {
+    flex-direction: column;
+}
+
+.jadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: row;
+
+    position: relative;
+    top: 5%;
+}
+
+.sipky {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 13vw;
+    height: 13vw;
+    position: absolute;
+}
+
+.lavasipka {
+    background-image: url("../img/sipka-vlavo.png");
+    margin-right: 20px;
+    left: 0;
+}
+.pravasipka {
+    background-image: url("../img/sipka-vpravo.png");
+    margin-left: 20px;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+/* 
+<div class="container">
+  
+  <section class="panel blue">
+    <h1>Pair with CSS Scroll Snapping</h1>
+  </section>
+
+  <section class="panel orange">
+    <p>This element will spin.</p>
+  </section>
+
+  <section class="panel red">
+    <p>This background color will change</p>
+  </section>
+
+  <section class="panel blue yoyo">
+    <p>Yoyo Text!</p>
+  </section>
+
+</div>
+ */
+
+
+
+
+/* ? */
+table {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    width: 66%;
+}
+
+
+
+
+
+
+
+.container {
+    max-height: 100vh;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .panel {
+    scroll-snap-align: start;
+    height: 100vh;
+  }
+
+
+
+
+.fp-slides {
+    z-index: 2;
+}
+
+.fp-overflow .section5 {
+    overflow-y: unset;
+}
+
+
+
+/* PROGRAM */
+
+.program {
+    flex-direction: column;
+    position: relative;
+}
+
+.program .fp-controlArrow {
+    top: 50%;
+}
+
+.program .fp-next {
+    right: 5%;
+}
+
+.program .fp-prev {
+    left: 5%;
+}
+
+
+.program table {
+    position: relative;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+
+    font-size: 15rem;
+    line-height: 1.2;
+
+    width: 66%;
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 45vh;
+
+    border-spacing: 15px 0;
+    /*border: 15rem solid black;*/
+    z-index: 3;
+}
+
+.program table::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    right: -15px;
+    bottom: 15px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    z-index: -1;
+}
+
+/* .program table td {
+    padding: 0 15px;
+} */
+
+.program table tbody {
+    display: table-row-group;
+}
+
+.program table tr {
+    display: table-row;
+}
+
+.program table tr:hover {
+    color: #F9B821;
+    /*border: 1px solid #F9B821;*/
+}
+
+
+
+/* REGISTRÁCIA */
+
+.registracia-slide1 .jadro {
+    top: 3%;
+}
+
+.registracia {
+    color: #222;
+    flex-direction: column;
+    position: relative;
+}
+
+.registracia .jadro-registracia {
+    z-index: 3;
+    position: relative;
+    /* top: 12%; */
+}
+
+.registracia h1 {
+    text-align: center;
+    color: white;
+}
+
+.registracia p {
+    position: relative;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+
+    font-size: 15rem;
+    line-height: 1.5;
+    /* no no no, totu sirku tu nie*/
+    /* width: 80%;  */
+    margin: 0 auto;
+    padding: 18px 15px 20px 20px;
+}
+
+.registracia p::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    right: -15px;
+    bottom: 15px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+}
+
+.registracia p em {
+    color: #f1cb75;
+}
+
+.podvpravo {
+    text-align: right;
+}
+
+.slnko {
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 27%;
+    left: -7%;
+
+    background-image: url("../img/slniecko.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+#registruj-sa {
+    position: absolute;
+    bottom: 7%;
+    left: -30%;
+    z-index: 1;
+}
+
+#registruj-sa .registruj-sa-text {
+    position: relative;
+    bottom: -80%;
+    left: 0%;
+}
+
+.slnko-tu {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    bottom: -30%;
+    left: 82%;
+
+    background-image: url("../img/registruj-tu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.slnko-tam {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    background-image: url("../img/registruj-tu-hover-w.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 22;
+    left: 50%;
+    top: 105%;
+    transform: translate(-50%,-50%);
+
+    transition: all 0.7 ease-out;
+}
+
+.slnko-tam:hover {
+    background-image: url("../img/registruj-tu.png");
+    transition: all 0.7 ease-out;
+}
+
+.slnko-tam:active {
+    background-image: url("../img/registruj-tu-hover-e.png");
+}
+
+
+.registracia .jadro {
+    flex-direction: column;
+}
+
+.tlacidlova-cast {
+    width: 66%;
+}
+
+.tlacidlova-cast h1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    /* text-indent: calc(5vw * -1.1); */
+    z-index: 33;
+    margin-top: 0;
+    }
+
+
+/* MIESTO A KONTAKT */
+.adresa:hover {
+    color: #F9B821;
+}
+
+.mapa {
+    width: 100%;
+    height: auto;
+}

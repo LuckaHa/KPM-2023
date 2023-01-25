@@ -406,6 +406,7 @@ background-position: top right;
     position: absolute;
 }
 
+/* cierna ciara okolo ramceka */
 .o-kpm p::before, .miesto-kontakt p::before {
     content: "";
     top: -15px;
@@ -784,13 +785,22 @@ background-position: top right;
     }
 
 /* MIESTO A KONTAKT */
+#kontakt-ramcek {
+    position: relative;
+    height: 90%;
+    width: auto;
+    max-width: 550rem;
+}
+
 .adresa:hover {
     color: #F9B821;
 }
 
-.mapa {
+#kontakt-ramcek .mapa {
+    position: relative;
+    height: 80%;
     width: 100%;
-    height: auto;
+    max-width: 500rem;
 }
 
 

@@ -279,7 +279,7 @@ li:last-of-type:after {
     right: 0;
     left: 0;
     bottom: 0;
-    opacity: 0.75;
+    opacity: 1;
     z-index: 0;
 }
 
@@ -602,7 +602,8 @@ background-position: top right;
     width: 66%;
     margin: 0 auto;
     vertical-align: middle;
-    height: 45vh;
+    height: 60%;
+    top: 4%;
 
     border-spacing: 15px 0;
     /*border: 15rem solid black;*/
@@ -983,23 +984,13 @@ background-position: top right;
         width: 66%;
         margin: 0 auto;
         vertical-align: middle;
-        height: 45vh;
+        height: 60%;
+        top: 4%;
         border-spacing: 15px 0;
         /* border: 15rem solid black; */
         z-index: 3;
         text-align: center;
     }       
-    
-    
-    .meno-recnika, .den-v-tyzdni {
-        font-size: 24rem;
-        text-transform: uppercase;
-        text-indent: -30px;
-        margin-top: 28;
-        position: relative;
-        z-index: 5;
-        color: #fff;
-    }
 
 
     .mesto-bg {
@@ -1059,10 +1050,6 @@ background-position: top right;
 
     .jadro-popis {
         width: 55%;
-    }
-
-    .program table {
-        width: 50%;
     }
 
     #program .slniecko {

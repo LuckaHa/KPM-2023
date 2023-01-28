@@ -450,10 +450,10 @@ background-position: top right;
     
 
 .slniecko-okpm {
-    bottom: -65%;
-    left: -135%;
-    width: 90vh;
-    height: 90vh;
+    top: -14%;
+    left: -48%;
+    width: 40vh;
+    height: 40vh;
 }
 
 .slniecko-recnik {
@@ -461,6 +461,28 @@ background-position: top right;
     left: -5%;
     width: 60vh;
     height: 60vh;
+}
+
+.slniecko-program {
+    bottom: -16%;
+    right: -35%;
+    width: 380px;
+    height: 380px;
+}
+
+.slniecko-registracia {
+    position: absolute;
+    top: -5%;
+    width: 170px;
+    height: 170px;
+}
+
+.slniecko-kontakt {
+    position: absolute;
+    top: calc(-7vh * 3);
+    right: calc(-7vw * 3);
+    width: 300px;
+    height: 300px;
 }
 
 

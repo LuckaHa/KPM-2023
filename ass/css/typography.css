@@ -141,7 +141,10 @@ nav ul {
     margin-top: -14rem;
     position: relative;
     z-index: 5;
-    color: #fff;
+    color: #F9B821;
+    align-self: flex-start;
+    left: calc(4vw * 4);
+    bottom: 6px;
 }
 
 

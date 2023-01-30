@@ -279,7 +279,7 @@ li:last-of-type:after {
     right: 0;
     left: 0;
     bottom: 0;
-    opacity: 0.75;
+    opacity: 1;
     z-index: 0;
 }
 
@@ -396,7 +396,7 @@ background-position: top right;
     color: #fff;
 
     width: 100%;
-    margin: 0 auto;
+    margin-top: 35%;
     padding: 18px 15px 20px 20px;
 }
 
@@ -450,10 +450,10 @@ background-position: top right;
     
 
 .slniecko-okpm {
-    bottom: -65%;
-    left: -135%;
-    width: 90vh;
-    height: 90vh;
+    top: -14%;
+    left: -48%;
+    width: 40vh;
+    height: 40vh;
 }
 
 .slniecko-recnik {
@@ -461,6 +461,28 @@ background-position: top right;
     left: -5%;
     width: 60vh;
     height: 60vh;
+}
+
+.slniecko-program {
+    bottom: -16%;
+    right: -35%;
+    width: 380px;
+    height: 380px;
+}
+
+.slniecko-registracia {
+    position: absolute;
+    top: -5%;
+    width: 170px;
+    height: 170px;
+}
+
+.slniecko-kontakt {
+    position: absolute;
+    top: calc(-7vh * 3);
+    right: calc(-7vw * 3);
+    width: 300px;
+    height: 300px;
 }
 
 
@@ -602,7 +624,8 @@ background-position: top right;
     width: 66%;
     margin: 0 auto;
     vertical-align: middle;
-    height: 45vh;
+    height: 60%;
+    top: 4%;
 
     border-spacing: 15px 0;
     /*border: 15rem solid black;*/
@@ -983,23 +1006,13 @@ background-position: top right;
         width: 66%;
         margin: 0 auto;
         vertical-align: middle;
-        height: 45vh;
+        height: 60%;
+        top: 4%;
         border-spacing: 15px 0;
         /* border: 15rem solid black; */
         z-index: 3;
         text-align: center;
     }       
-    
-    
-    .meno-recnika, .den-v-tyzdni {
-        font-size: 24rem;
-        text-transform: uppercase;
-        text-indent: -30px;
-        margin-top: 28;
-        position: relative;
-        z-index: 5;
-        color: #fff;
-    }
 
 
     .mesto-bg {
@@ -1059,10 +1072,6 @@ background-position: top right;
 
     .jadro-popis {
         width: 55%;
-    }
-
-    .program table {
-        width: 50%;
     }
 
     #program .slniecko {

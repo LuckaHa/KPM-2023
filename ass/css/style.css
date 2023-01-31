@@ -479,7 +479,7 @@ background-position: top right;
 
 .slniecko-kontakt {
     position: absolute;
-    top: calc(-7vh * 3);
+    top: calc(-5vh * 3);
     right: calc(-7vw * 3);
     width: 300px;
     height: 300px;

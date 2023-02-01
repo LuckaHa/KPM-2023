@@ -313,24 +313,43 @@
         <div class="slide registracia-slide1">
             <div class="jadro">
                 <div class="jadro-popis">
-                    <p>
+                    <p id="p_reg">
                         Konferenčný poplatok:
                         <br> Ak sa prihlásiš do 28.2 - 35€
                         <br> Ak sa prihlásiš do 31.3 - 42€
                         <br> Registrácia končí 31.3.2023
                         
-                        <em>
-                            <br><br>
-                            IBAN: <br> SK24 8330 0000 0020 0015 0040<br>
-                            Variabilný symbol: <br> Tvoje ID<br>
-                            <small>(príde ti emailom po registrovaní sa)</small><br>
-                            Špecifický symbol: <br> 1111<br>
-                            Konštantný symbol: <br> <span class="podvpravo"> 0558</span><br><br>
-                        </em>
+                        <script>
+                            var em = document.createElement('em');
+                            const na_vysku = '<br><br>IBAN: <br> SK24 8330 0000 0020 0015 0040<br>Variabilný symbol: <br> Tvoje ID<br><small>(príde ti emailom po registrovaní sa)</small><br>Špecifický symbol: <br> 1111<br>Konštantný symbol: <br> <span class="podvpravo"> 0558</span><br><br>';
+                            const na_sirku = '<br>IBAN: SK24 8330 0000 0020 0015 0040<br>Variabilný symbol: Tvoje ID <small>(príde ti emailom po registrovaní sa)</small><br>Špecifický symbol: 1111<br>Konštantný symbol: <span class="podvpravo"> 0558</span><br>';    
+                            var content;
+
+                            // pri prvom nacitani stranky
+                            if ((screen.width > 768) || (screen.availHeight > screen.availWidth)) {
+                                content = na_vysku;
+                            } else {
+                                content = na_sirku;
+                            }
+                            em.innerHTML = content;
+                            document.getElementById('p_reg').appendChild(em);
+    
+                            // pri kazdej zmene orientacie
+                            window.addEventListener('orientationchange', function () {
+                                if ((screen.width > 768) || (screen.availHeight > screen.availWidth)) {
+                                    content = na_vysku;
+                                } else {
+                                    content = na_sirku;
+                                }
+    
+                                var new_em = document.createElement('em');
+                                new_em.innerHTML = content;
+                                em.parentNode.replaceChild(new_em, em);
+                                em = new_em;
+                            });
+                        </script>
                     </p>
-                    <!-- <h2 class="registracia-doplnok">Údaje k platbe</h2> -->
                 </div>
-                <!-- <div class="slnko-tu"></div> -->
                 
                 <div class="tlacidlova-cast">
                     <h1>Registruj sa</h1>

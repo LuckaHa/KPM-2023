@@ -1183,7 +1183,11 @@ background-position: top right;
 
     .registracia .jadro {
         flex-direction: column;
-        top: 15%;
+        top: 6%;
+    }
+
+    .tlacidlova-cast h1 {
+        margin-top: -8%;
     }
 
     #program .slniecko {

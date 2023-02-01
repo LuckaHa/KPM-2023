@@ -396,7 +396,7 @@ background-position: top right;
     color: #fff;
 
     width: 100%;
-    margin-top: 35%;
+    margin-top: 10%;
     padding: 18px 15px 20px 20px;
 }
 
@@ -497,7 +497,7 @@ background-position: top right;
     flex-direction: row;
 
     position: relative;
-    top: 5%;
+    top: 0;
 }
 
 .sipky {
@@ -824,6 +824,10 @@ background-position: top right;
     height: 80%;
     width: 100%;
     max-width: 500rem;
+}
+
+.miesto-kontakt h1 {
+    text-align: center;
 }
 
 /* zmeny */

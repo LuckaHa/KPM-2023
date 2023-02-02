@@ -396,7 +396,7 @@ background-position: top right;
     color: #fff;
 
     width: 100%;
-    margin-top: 35%;
+    margin-top: 10%;
     padding: 18px 15px 20px 20px;
 }
 
@@ -479,8 +479,8 @@ background-position: top right;
 
 .slniecko-kontakt {
     position: absolute;
-    top: calc(-7vh * 3);
-    right: calc(-7vw * 3);
+    top: calc(-5vh * 3);
+    right: calc(-1vw * 3);
     width: 300px;
     height: 300px;
 }
@@ -497,7 +497,7 @@ background-position: top right;
     flex-direction: row;
 
     position: relative;
-    top: 5%;
+    top: 0;
 }
 
 .sipky {
@@ -727,7 +727,7 @@ background-position: top right;
 
 .slnko {
     width: 35%;
-    height: 100%;
+    height: 35%;
     position: absolute;
     top: 27%;
     left: -7%;
@@ -824,6 +824,10 @@ background-position: top right;
     height: 80%;
     width: 100%;
     max-width: 500rem;
+}
+
+.miesto-kontakt h1 {
+    text-align: center;
 }
 
 /* zmeny */
@@ -1037,10 +1041,6 @@ background-position: top right;
         animation: gogo 1.7s ease-in-out 2s 1 normal forwards;
     }
 
-
-
-
-
     .program-slide1:before, .program-slide2:before, .program-slide3:before,.program-slide4:before {
         /* top: 0;
         right: 0;
@@ -1080,6 +1080,135 @@ background-position: top right;
         width: 400px;
         height: 400px;
     }
+}
+
+@media screen and (orientation: portrait) {
+    .registracia .jadro {
+        top: 0;
+    }
+}
 
 
+@media screen and (orientation: landscape) and (max-width: 768px) {
+
+    #o-kpm > div.fp-slides > div > div.slide.o-kpm-slide1.fp-slide.active > div {
+        top: 5%;
+    }
+
+    .o-kpm p, .recnici p {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .o-kpm p, .recnici p, .registracia p {
+        font-size: 13rem;
+        line-height: 1.5;
+        font-weight: 300;
+        position: relative;
+        z-index: 4;
+        top: -10%;
+    }
+
+    .program table {
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.75);
+        color: #fff;
+        font-size: 15rem;
+        line-height: 1.2;
+        width: 66%;
+        margin: 0 auto;
+        vertical-align: middle;
+        height: 60%;
+        top: 4%;
+        border-spacing: 15px 0;
+        /* border: 15rem solid black; */
+        z-index: 3;
+        text-align: center;
+    }       
+
+    .mesto-bg {
+        animation: none;
+    }   
+
+    .logo {
+        height: 50vh;
+    
+        background-image: 
+            url("../img/logo_part2.png"),
+            url("../img/logo_part3.png"),
+            url("../img/logo_part4.png"),
+            url("../img/logo_kruh.png")
+            ;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    
+        animation: gogo 1.7s ease-in-out 2s 1 normal forwards;
+    }
+
+    .program-slide1:before, .program-slide2:before, .program-slide3:before,.program-slide4:before {
+        background: none;
+    }
+    
+    .program:before {
+        content: "";
+        background-image:         
+            radial-gradient(
+                circle at 92% 9%,
+                rgba(190, 227, 255, 0.33) 3%,
+                rgba(8, 26, 33, 0.33) 68%
+            ), 
+            url('../img/program_t.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        opacity: 1;
+        z-index: 0;
+    }
+
+    .slniecko-program {
+        right: -22%;
+    }
+
+    .jadro-popis {
+        width: 70%;
+    }
+
+    #registracia .jadro-popis {
+        height: 50%;
+    }
+
+    .registracia .jadro {
+        flex-direction: column;
+        top: 6%;
+    }
+
+    .tlacidlova-cast h1 {
+        margin-top: -8%;
+    }
+
+    #program .slniecko {
+        bottom: 0%;
+        right: -7%;
+        width: 400px;
+        height: 400px;
+    }
+
+    #kontakt-ramcek .mapa {
+        position: relative;
+        width: 40%;
+    }
+
+    .miesto-kontakt h1 {
+        margin: 0 20%;
+    }
+    
+    .miesto-kontakt p {
+        max-width: 310rem;
+        margin: 0 auto;
+        height: 80%;
+    }
 }

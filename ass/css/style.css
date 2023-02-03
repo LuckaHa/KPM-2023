@@ -358,7 +358,7 @@ background-position: top right;
     color: #fff;
 
     width: 100%;
-    margin-top: 10%;
+    margin-top: 30%;
     padding: 18px 15px 20px 20px;
 }
 
@@ -369,7 +369,7 @@ background-position: top right;
 }
 
 /* cierna ciara okolo ramceka */
-.o-kpm p::before, .miesto-kontakt p::before {
+.o-kpm p::before, .recnici p::before, .miesto-kontakt p::before {
     content: "";
     top: -15px;
     left: 15px;
@@ -377,14 +377,6 @@ background-position: top right;
     bottom: 15px;
     border-top: 2px solid #000;
     border-right: 2px solid #000;
-}
-.recnici p::before {
-    top: -15px;
-    left: -15px;
-    right: 15px;
-    bottom: 15px;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
 }
 
 .slniecko {
@@ -481,6 +473,10 @@ background-position: top right;
 
     position: relative;
     top: 0;
+}
+
+.recnici .jadro {
+    top: 7%;
 }
 
 .sipky {
@@ -986,7 +982,7 @@ background-position: top right;
 
     .fotka-recnik {
         top: calc(-3vh * 8);
-        right: calc(7vw * -2);
+        right: calc(6vw * -2);
         width: 380px;
         height: 380px;
     }

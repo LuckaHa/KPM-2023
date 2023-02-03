@@ -149,8 +149,8 @@ nav ul {
 .registracia-doplnok {
     font-size: 24rem;
     text-transform: uppercase;
-    text-indent: calc(5vw * 0.9);
-    margin-top: -14rem;
+    text-indent: -30px;
+    margin-top: 28px;
     position: relative;
     z-index: 5;
     color: #F9B821;

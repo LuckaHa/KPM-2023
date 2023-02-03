@@ -208,13 +208,21 @@ li:last-of-type:after {
 
 .slide {
     position: relative;
-
- 
 }
 
-.slide1:before, .slide2:before, .slide3:before {
+.slide1:before, .slide2:before, .slide3:before, .slide4:before, .slide5:before {
+    content: "";
+    background-image: 
+        radial-gradient( 
+            circle at 92% 9%, 
+            rgba(190, 227, 255, 0.2) 3%, 
+            rgba(8, 26, 33, 0.25) 68% 
+            ), 
+            url(../img/recnici.jpg);
+    background-position: 72% 0%;
     background-size: cover;
     background-repeat: no-repeat;
+
     position: absolute;
     top: 0;
     right: 0;
@@ -223,52 +231,6 @@ li:last-of-type:after {
     opacity: 0.75;
     z-index: 0;
 }
-
-.slide1:before {
-    content: "";
-    background-image: 
-        radial-gradient( 
-            circle at 92% 9%, 
-            rgba(190, 227, 255, 0.2) 3%, 
-            rgba(8, 26, 33, 0.25) 68% 
-            ), 
-            url(../img/recnici-Majo-d.jpg);
-    
-    background-position: 72% 0%;
-}
-
-
-.slide2:before {
-    content: "";
-    background-image: 
-        radial-gradient( 
-            circle at 92% 9%, 
-            rgba(190, 227, 255, 0.2) 3%, 
-            rgba(8, 26, 33, 0.25) 68% 
-            ), 
-            url(../img/recnic-peta.jpg);
-    
-    background-position: 72% 0%;
-}
-
-.slide3:before {
-        content: "";
-    background-image: 
-        radial-gradient( 
-            circle at 92% 9%, 
-            rgba(190, 227, 255, 0.2) 3%, 
-            rgba(8, 26, 33, 0.25) 68% 
-            ), 
-            url(../img/parka.jpg);
-    
-    background-position: 72% 0%;
-}
-
-
-
-
-
-
 
 
 .program-slide1:before, .program-slide2:before, .program-slide3:before,.program-slide4:before {
@@ -456,12 +418,32 @@ background-position: top right;
     height: 40vh;
 }
 
-.slniecko-recnik {
+.fotka-recnik {
+    background-size: contain;
+    background-repeat: no-repeat;
+    
     position: absolute;
-    top: calc(-3vh * 3);
-    right: calc(16vw * 3);
+    z-index: 5;
+    top: calc(-3vh * 6);
+    right: calc(7vw * 3);
     width: 300px;
     height: 300px;
+}
+
+.peta {
+    background-image: url("../img/recnik-Petka-09.png");
+}
+
+.miro {
+    background-image: url("../img/recnik-Miro-09.png");
+}
+
+.slavo {
+    background-image: url("../img/recnik-Slavo-09.png");
+}
+
+.majo {
+    background-image: url("../img/recnik-Majo-09.png");
 }
 
 .slniecko-program {
@@ -996,6 +978,13 @@ background-position: top right;
         position: relative;
         z-index: 4;
         padding: 36px 30px 40px 40px;
+    }
+
+    .fotka-recnik {
+        top: calc(-3vh * 8);
+        right: calc(7vw * -2);
+        width: 380px;
+        height: 380px;
     }
 
     .program table {

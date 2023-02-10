@@ -187,6 +187,10 @@ li:last-of-type:after {
     z-index: 0;
 }
 
+#kapely > div.fp-slides > div > div.slide.kapely-slide1.fp-slide.active > div {
+    top: 20%;
+}
+
 .miesto-kontakt:before {
     content: "";
     background-image:         
@@ -219,6 +223,23 @@ li:last-of-type:after {
             rgba(8, 26, 33, 0.25) 68% 
             ), 
             url(../img/recnici.jpg);
+    background-position: 72% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+.kapely-slide1:before, .kapely-slide2:before, .kapely-slide3:before, .kapely-slide4:before {
+    content: "";
+    background-image:  
+            url(../img/kapely.jpg);
     background-position: 72% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -408,6 +429,49 @@ background-position: top right;
     left: -48%;
     width: 40vh;
     height: 40vh;
+}
+
+.fotka-kapely {
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    position: absolute;
+    z-index: 5;
+    width: 600px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.zilincania {
+    background-image: url("../img/kapela-zilina-10.png");
+    top: -150%;
+    left: -16%;
+}
+
+.david {
+    background-image: url("../img/kapela-david-09.png");
+}
+
+.espe {
+    background-image: url("../img/kapela-espe-09.png");
+}
+
+.kpm-band {
+    background-image: url("../img/kapela-espe-09.png");
+}
+
+@media screen and (min-width: 769px) {
+    .fotka-kapely {
+        width: 800px;
+        height: 800px;
+    }
+
+    .zilincania {
+        background-image: url(../img/kapela-zilina-10.png);
+        top: -170%;
+        left: 28%;
+    }
 }
 
 .fotka-recnik {

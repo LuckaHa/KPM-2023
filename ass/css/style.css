@@ -191,10 +191,6 @@ li:last-of-type:after {
     top: 20%;
 }
 
-#kapely > div.fp-slides > div > div.slide.kapely-slide1.fp-slide.active > div {
-    top: 20%;
-}
-
 .recnici:before {
     content: "";
     background-image:         
@@ -233,7 +229,7 @@ li:last-of-type:after {
     z-index: 0;
 }
 
-.kapely-slide1:before, .kapely-slide2:before, .kapely-slide3:before, .kapely-slide4:before {
+.kapely:before {
     content: "";
     background-image:  
             url(../img/kapely.jpg);
@@ -243,7 +239,7 @@ li:last-of-type:after {
 
     position: absolute;
     top: 0;
-    right: 0;
+    right: -22%;
     left: 0;
     bottom: 0;
     opacity: 0.75;
@@ -459,18 +455,29 @@ background-position: top right;
 }
 
 .kpm-band {
-    background-image: url("../img/kapela-espe-09.png");
+    background-image: url("../img/kapela-kpm-11.png");
+    width: 700px;
+    height: 700px;
+    top: -422%;
+    left: -23%;
 }
 
 @media screen and (min-width: 769px) {
+    .kapely:before {
+        right: 0;
+    }
+    
     .fotka-kapely {
-        width: 800px;
-        height: 800px;
+        width: 850px;
+        height: 850px;
     }
 
     .zilincania {
-        background-image: url(../img/kapela-zilina-10.png);
         top: -170%;
+        left: 28%;
+    }
+
+    .kpm-band {
         left: 28%;
     }
 }

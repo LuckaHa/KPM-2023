@@ -144,7 +144,7 @@ nav ul {
     color: #F9B821;
     align-self: flex-start;
     bottom: calc(-9vh * 3);
-    left: calc(-3vh * 7);
+    left: calc(-3vw * 5);
 }
 
 .kapely-slide1 .nazov-kapely {

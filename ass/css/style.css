@@ -187,6 +187,25 @@ li:last-of-type:after {
     z-index: 0;
 }
 
+.recnici:before {
+    content: "";
+    background-image:         
+        radial-gradient(
+            circle at 92% 9%,
+            rgba(190, 227, 255, 0.33) 3%,
+            rgba(8, 26, 33, 0.33) 68%
+        ), 
+        url('../img/recnici.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -80%;
+    bottom: 0;
+    opacity: 1;
+    z-index: 0;
+}
+
 .miesto-kontakt:before {
     content: "";
     background-image:         
@@ -208,67 +227,7 @@ li:last-of-type:after {
 
 .slide {
     position: relative;
-
- 
 }
-
-.slide1:before, .slide2:before, .slide3:before {
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    opacity: 0.75;
-    z-index: 0;
-}
-
-.slide1:before {
-    content: "";
-    background-image: 
-        radial-gradient( 
-            circle at 92% 9%, 
-            rgba(190, 227, 255, 0.2) 3%, 
-            rgba(8, 26, 33, 0.25) 68% 
-            ), 
-            url(../img/recnici-Majo-d.jpg);
-    
-    background-position: 72% 0%;
-}
-
-
-.slide2:before {
-    content: "";
-    background-image: 
-        radial-gradient( 
-            circle at 92% 9%, 
-            rgba(190, 227, 255, 0.2) 3%, 
-            rgba(8, 26, 33, 0.25) 68% 
-            ), 
-            url(../img/recnic-peta.jpg);
-    
-    background-position: 72% 0%;
-}
-
-.slide3:before {
-        content: "";
-    background-image: 
-        radial-gradient( 
-            circle at 92% 9%, 
-            rgba(190, 227, 255, 0.2) 3%, 
-            rgba(8, 26, 33, 0.25) 68% 
-            ), 
-            url(../img/parka.jpg);
-    
-    background-position: 72% 0%;
-}
-
-
-
-
-
-
 
 
 .program-slide1:before, .program-slide2:before, .program-slide3:before,.program-slide4:before {
@@ -396,7 +355,7 @@ background-position: top right;
     color: #fff;
 
     width: 100%;
-    margin-top: 10%;
+    margin-top: 30%;
     padding: 18px 15px 20px 20px;
 }
 
@@ -407,7 +366,7 @@ background-position: top right;
 }
 
 /* cierna ciara okolo ramceka */
-.o-kpm p::before, .miesto-kontakt p::before {
+.o-kpm p::before, .recnici p::before, .miesto-kontakt p::before {
     content: "";
     top: -15px;
     left: 15px;
@@ -415,14 +374,6 @@ background-position: top right;
     bottom: 15px;
     border-top: 2px solid #000;
     border-right: 2px solid #000;
-}
-.recnici p::before {
-    top: -15px;
-    left: -15px;
-    right: 15px;
-    bottom: 15px;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
 }
 
 .slniecko {
@@ -456,11 +407,32 @@ background-position: top right;
     height: 40vh;
 }
 
-.slniecko-recnik {
-    bottom: -55%;
-    left: -5%;
-    width: 60vh;
-    height: 60vh;
+.fotka-recnik {
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    position: absolute;
+    z-index: 5;
+    top: calc(-4vh * 6);
+    right: calc(7vw * 3);
+    width: 300px;
+    height: 300px;
+}
+
+.peta {
+    background-image: url("../img/recnik-Petka-09.png");
+}
+
+.miro {
+    background-image: url("../img/recnik-Miro-09.png");
+}
+
+.slavo {
+    background-image: url("../img/recnik-Slavo-09.png");
+}
+
+.majo {
+    background-image: url("../img/recnik-Majo-09.png");
 }
 
 .slniecko-program {
@@ -498,6 +470,10 @@ background-position: top right;
 
     position: relative;
     top: 0;
+}
+
+.recnici .jadro {
+    top: 7%;
 }
 
 .sipky {
@@ -999,6 +975,17 @@ background-position: top right;
         position: relative;
         z-index: 4;
         padding: 36px 30px 40px 40px;
+    }
+
+    .fotka-recnik {
+        top: calc(-3vh * 8);
+        right: calc(6vw * -2);
+        width: 380px;
+        height: 380px;
+    }
+
+    .recnici:before {
+        left: 0;
     }
 
     .program table {

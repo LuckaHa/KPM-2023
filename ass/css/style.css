@@ -191,6 +191,29 @@ li:last-of-type:after {
     top: 20%;
 }
 
+#kapely > div.fp-slides > div > div.slide.kapely-slide1.fp-slide.active > div {
+    top: 20%;
+}
+
+.recnici:before {
+    content: "";
+    background-image:         
+        radial-gradient(
+            circle at 92% 9%,
+            rgba(190, 227, 255, 0.33) 3%,
+            rgba(8, 26, 33, 0.33) 68%
+        ), 
+        url('../img/recnici.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -80%;
+    bottom: 0;
+    opacity: 1;
+    z-index: 0;
+}
+
 .miesto-kontakt:before {
     content: "";
     background-image:         
@@ -210,32 +233,6 @@ li:last-of-type:after {
     z-index: 0;
 }
 
-.slide {
-    position: relative;
-}
-
-.slide1:before, .slide2:before, .slide3:before, .slide4:before, .slide5:before {
-    content: "";
-    background-image: 
-        radial-gradient( 
-            circle at 92% 9%, 
-            rgba(190, 227, 255, 0.2) 3%, 
-            rgba(8, 26, 33, 0.25) 68% 
-            ), 
-            url(../img/recnici.jpg);
-    background-position: 72% 0%;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    opacity: 0.75;
-    z-index: 0;
-}
-
 .kapely-slide1:before, .kapely-slide2:before, .kapely-slide3:before, .kapely-slide4:before {
     content: "";
     background-image:  
@@ -251,6 +248,10 @@ li:last-of-type:after {
     bottom: 0;
     opacity: 0.75;
     z-index: 0;
+}
+
+.slide {
+    position: relative;
 }
 
 
@@ -480,7 +481,7 @@ background-position: top right;
     
     position: absolute;
     z-index: 5;
-    top: calc(-3vh * 6);
+    top: calc(-4vh * 6);
     right: calc(7vw * 3);
     width: 300px;
     height: 300px;
@@ -1049,6 +1050,10 @@ background-position: top right;
         right: calc(6vw * -2);
         width: 380px;
         height: 380px;
+    }
+
+    .recnici:before {
+        left: 0;
     }
 
     .program table {

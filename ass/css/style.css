@@ -730,6 +730,40 @@ background-position: top right;
 } */
 
 
+tbody {
+    line-height: 1.5;
+    color: #ffffff77;
+}
+
+.program-cas, .program-labyrint, .program-seminare, .program-registracia, .program-cas-v-time, .program-mentoring {
+    color: #fffd;
+}
+
+.program-kapela, .program-recnik, .hlavny-program-label, .program-nazov, .program-share {
+    color: #fff;
+}
+
+.program-kapela, .program-recnik {
+    display: block;
+}
+
+.ciarka, .program-recnik {
+    color: #f1cb75;
+}
+
+.program-kapela {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.hlavny-program-label {
+    display: none;
+}
+
+.program-nazov {
+    font-weight: 700;
+    line-height: 1.25;
+}
 
 
 
@@ -1091,7 +1125,9 @@ background-position: top right;
         /* border: 15rem solid black; */
         z-index: 3;
         text-align: center;
-    }       
+    }   
+    
+
 
 
     .mesto-bg {
@@ -1201,6 +1237,7 @@ background-position: top right;
         text-align: center;
     }       
 
+
     .mesto-bg {
         animation: none;
     }   
@@ -1287,3 +1324,5 @@ background-position: top right;
         height: 80%;
     }
 }
+
+

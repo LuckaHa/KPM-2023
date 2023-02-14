@@ -229,6 +229,10 @@ li:last-of-type:after {
     z-index: 0;
 }
 
+.kapely-slide {
+    align-items: center;
+}
+
 .kapely:before {
     content: "";
     background-image:  
@@ -428,36 +432,44 @@ background-position: top right;
     height: 40vh;
 }
 
+.jadro-kapely {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 90%;
+
+    position: relative;
+}
+
 .fotka-kapely {
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
     
-    position: absolute;
-    z-index: 5;
-    width: 600px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
 
 .zilincania {
-    background-image: url("../img/kapela-zilina-10.png");
-    top: -150%;
-    left: -16%;
+    background-image: url(../img/kapela-zilina-10.png);
 }
 
 .david {
     background-image: url("../img/kapela-david-09.png");
+    background-size: 120%;
 }
 
 .espe {
     background-image: url("../img/kapela-espe-09.png");
+    background-size: 120%;
 }
 
 .kpm-band {
     background-image: url("../img/kapela-kpm-11.png");
-    width: 700px;
-    height: 700px;
     top: -422%;
     left: -23%;
 }
@@ -470,6 +482,7 @@ background-position: top right;
     .fotka-kapely {
         width: 850px;
         height: 850px;
+        background-size: contain;
     }
 
     .zilincania {

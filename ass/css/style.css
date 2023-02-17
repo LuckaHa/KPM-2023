@@ -791,7 +791,7 @@ tbody {
     padding: 18px 15px 20px 20px;
 }
 
-.registracia p::before {
+.registracia .jadro-popis::before {
     content: "";
     position: absolute;
     top: -15px;
@@ -802,7 +802,11 @@ tbody {
     border-right: 2px solid #000;
 }
 
-.registracia p em {
+#jemne-siva {
+    color: #ffffff77;
+}
+
+#zlta {
     color: #f1cb75;
 }
 
@@ -1169,7 +1173,7 @@ tbody {
     }
 
     .jadro-popis {
-        width: 55%;
+        width: max-content;
     }
 
     #program .slniecko {
@@ -1177,6 +1181,15 @@ tbody {
         right: -7%;
         width: 400px;
         height: 400px;
+    }
+
+    .registracia p {
+        font-size: 18rem;
+        padding: 40rem;
+    }
+
+    .tlacidlova-cast {
+        margin-top: 40rem;
     }
 }
 

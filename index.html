@@ -202,36 +202,36 @@
         
         <h1 class="hlavnynadpis">Kapely</h1>
 
-        <div class="slide kapely-slide1">
+        <div class="slide kapely-slide kapely-slide1">
             
-            <div class="jadro">
-                <div class="fotka-kapely zilincania"></div>
-                <h1 class="nazov-kapely"><br>ECAV ZA & <br> Za Kostolom <br> Worship</h1>
-            </div>
-            
-        </div>
-               
-        <div class="slide kapely-slide2">
-            
-            <div class="jadro">
-                <div class="fotka-kapely david"></div>
-                <h1 class="nazov-kapely"><br>Dávid Vaško <br> Band</h1>
-            </div>
-
-        </div>
-
-        <div class="slide kapely-slide3">
-            
-            <div class="jadro">
+            <div class="jadro-kapely">
                 <div class="fotka-kapely espe"></div>
                 <h1 class="nazov-kapely">ESPÉ</h1>
             </div>
             
         </div>
 
-        <div class="slide kapely-slide4">
+        <div class="slide kapely-slide kapely-slide2">
+
+            <div class="jadro-kapely">
+                <div class="fotka-kapely zilincania"></div>
+                <h1 class="nazov-kapely">ECAVZA & <br> Za Kostolom <br> Worship</h1>
+            </div>
             
-            <div class="jadro">
+        </div>
+               
+        <div class="slide kapely-slide kapely-slide3">
+            
+            <div class="jadro-kapely">
+                <div class="fotka-kapely david"></div>
+                <h1 class="nazov-kapely"><br>Dávid Vaško <br> Band</h1>
+            </div>
+
+        </div>
+
+        <div class="slide kapely-slide kapely-slide4">
+            
+            <div class="jadro-kapely">
                 <div class="fotka-kapely kpm-band"></div>
                 <h1 class="nazov-kapely">KPM Band</h1>
             </div>
@@ -475,41 +475,43 @@
         <div class="slide registracia-slide1">
             <div class="jadro">
                 <div class="jadro-popis">
-                    <p id="p_reg">
-                        Konferenčný poplatok:
-                        <br> Ak sa prihlásiš do 28.2 - 35€
-                        <br> Ak sa prihlásiš do 31.3 - 42€
-                        <br> Registrácia končí 31.3.2023
-                        
-                        <script>
-                            var em = document.createElement('em');
-                            const na_vysku = '<br><br>IBAN: <br> SK24 8330 0000 0020 0015 0040<br>Variabilný symbol: <br> Tvoje ID<br><small>(príde ti emailom po registrovaní sa)</small><br>Špecifický symbol: <br> 1111<br>Konštantný symbol: <br> <span class="podvpravo"> 0558</span><br><br>';
-                            const na_sirku = '<br>IBAN: SK24 8330 0000 0020 0015 0040<br>Variabilný symbol: Tvoje ID <small>(príde ti emailom po registrovaní sa)</small><br>Špecifický symbol: 1111<br>Konštantný symbol: <span class="podvpravo"> 0558</span><br>';    
-                            var content;
+                    <script>
+                        // pri uzsich obrazovkach pridat medzeru
+                        function add_br() {
+                            if (screen.width < 769) {
+                            document.getElementById('em_reg').appendChild(document.createElement('br'));
+                        }
+                        }
+                    </script>
 
-                            // pri prvom nacitani stranky
-                            if ((screen.width > 768) || (screen.availHeight > screen.availWidth)) {
-                                content = na_vysku;
-                            } else {
-                                content = na_sirku;
-                            }
-                            em.innerHTML = content;
-                            document.getElementById('p_reg').appendChild(em);
-    
-                            // pri kazdej zmene orientacie
-                            window.addEventListener('orientationchange', function () {
-                                if ((screen.width > 768) || (screen.availHeight > screen.availWidth)) {
-                                    content = na_vysku;
-                                } else {
-                                    content = na_sirku;
-                                }
-    
-                                var new_em = document.createElement('em');
-                                new_em.innerHTML = content;
-                                em.parentNode.replaceChild(new_em, em);
-                                em = new_em;
-                            });
-                        </script>
+                    <p>
+                        <b>Konferenčný poplatok:</b><br>
+                        Ak sa prihlásiš do 28.2 - 35€<br>
+                        Ak sa prihlásiš do 31.3 - 42€<br>
+
+                        <span id="jemne-siva">
+                            Registrácia končí 31.3.2023<br><br>
+                        </span>
+
+                        <em id="em_reg">
+                            <span id="zlta">IBAN:</span>
+                            <script>add_br();</script>
+                            <span id="zlta">SK24 8330 0000 0020 0015 0040<br></span>
+
+                            Variabilný symbol:
+                            <script>add_br();</script>
+                            Tvoje ID
+                            <script>add_br();</script>
+                            <small>(príde ti emailom po registrovaní sa)</small><br>
+
+                            <span id="jemne-siva">Špecifický symbol:</span>
+                            <script>add_br();</script>
+                            <span id="jemne-siva">1111<br></span>
+
+                            <span id="zlta">Konštantný symbol:</span> 
+                            <script>add_br();</script>
+                            <span id="zlta" class="podvpravo"> 0558</span></span>
+                        </em>
                     </p>
                 </div>
                 

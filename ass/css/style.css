@@ -720,10 +720,9 @@ background-position: top right;
     display: table-row;
 }
 
-.program table tr:hover {
+/* .program table tr:hover {
     color: #F9B821;
-    /*border: 1px solid #F9B821;*/
-}
+} */
 
 /* table {
     padding: 18px 17px 20px 20px ;

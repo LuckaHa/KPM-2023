@@ -136,30 +136,19 @@ nav ul {
 
 .nazov-kapely {
     font-size: 24rem;
-    text-transform: uppercase;
-    text-indent: -30px;
-    margin-top: 28px;
-    position: relative;
-    z-index: 5;
-    color: #F9B821;
-    align-self: flex-start;
-    bottom: calc(-9vh * 3);
-    left: calc(-3vw * 5);
-}
-
-.kapely-slide1 .nazov-kapely {
-    bottom: calc(-11vh * 3);
-    left: calc(-5vh * 2);
+    margin: 0;
+    position: absolute;
+    bottom: 0%;
+    left: 30%;
+    transform: translate(-30%, 0%);
+    padding-left: 8px;
+    padding-bottom: 8px;
+    width: 300px;
 }
 
 @media screen and (min-width: 769px) {
     .nazov-kapely {
-        font-size: 30rem;
-    }
-
-    .kapely-slide1 .nazov-kapely {
-        bottom: calc(-11vh * 3);
-        left: calc(-5vh * 7);
+        font-size: 38rem;
     }
 }
 
@@ -174,20 +163,6 @@ nav ul {
     align-self: flex-start;
     bottom: 33px;
 }
-
-.registracia-doplnok {
-    font-size: 24rem;
-    text-transform: uppercase;
-    text-indent: -30px;
-    margin-top: 28px;
-    position: relative;
-    z-index: 5;
-    color: #F9B821;
-    align-self: flex-start;
-    left: calc(4vw * 4);
-    bottom: 6px;
-}
-
 
 .o-kpm h1, .recnici h1, .program h1 {
     display: flex;

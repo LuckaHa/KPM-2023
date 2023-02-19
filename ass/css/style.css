@@ -720,10 +720,9 @@ background-position: top right;
     display: table-row;
 }
 
-.program table tr:hover {
+/* .program table tr:hover {
     color: #F9B821;
-    /*border: 1px solid #F9B821;*/
-}
+} */
 
 /* table {
     padding: 18px 17px 20px 20px ;
@@ -804,7 +803,7 @@ tbody {
     padding: 18px 15px 20px 20px;
 }
 
-.registracia p::before {
+.registracia .jadro-popis::before {
     content: "";
     position: absolute;
     top: -15px;
@@ -815,7 +814,11 @@ tbody {
     border-right: 2px solid #000;
 }
 
-.registracia p em {
+#jemne-siva {
+    color: #ffffff77;
+}
+
+#zlta {
     color: #f1cb75;
 }
 
@@ -1185,11 +1188,24 @@ tbody {
         width: 55%;
     }
 
+    .registracia .jadro-popis, .miesto-kontakt .jadro-popis {
+        width: max-content;
+    }
+
     #program .slniecko {
         bottom: 0%;
         right: -7%;
         width: 400px;
         height: 400px;
+    }
+
+    .registracia p {
+        font-size: 18rem;
+        padding: 40rem;
+    }
+
+    .tlacidlova-cast {
+        margin-top: 40rem;
     }
 }
 

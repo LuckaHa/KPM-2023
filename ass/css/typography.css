@@ -164,20 +164,6 @@ nav ul {
     bottom: 33px;
 }
 
-.registracia-doplnok {
-    font-size: 24rem;
-    text-transform: uppercase;
-    text-indent: -30px;
-    margin-top: 28px;
-    position: relative;
-    z-index: 5;
-    color: #F9B821;
-    align-self: flex-start;
-    left: calc(4vw * 4);
-    bottom: 6px;
-}
-
-
 .o-kpm h1, .recnici h1, .program h1 {
     display: flex;
     justify-content: center;

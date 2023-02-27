@@ -164,7 +164,7 @@ nav ul {
     bottom: 33px;
 }
 
-.o-kpm h1, .recnici h1, .program h1 {
+.o-kpm h1, .recnici h1, .seminare h1, .program h1 {
     display: flex;
     justify-content: center;
     align-items: center;

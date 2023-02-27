@@ -652,8 +652,92 @@ background-position: top right;
 
 
 
+/* SEMINARE */
 
+.seminare:before {
+    content: "";
+    background-image:  
+            url(../img/seminar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -204%;
+    bottom: 0;
+    opacity: 0.75;
+    z-index: 0;
+}
+
+#seminare > div.fp-slides > div > div.slide > div {
+    top: 20%;
+}
+
+.jadro-seminare {
+    position: relative;
+
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+
+    font-size: 15rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 18px 15px 20px 30px;
+    top: 4%;
+}
+
+.jadro-seminare::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    right: -15px;
+    bottom: 15px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    z-index: -1;
+}
+
+.seminare-nazov {
+    font-weight: 700;
+    line-height: 1.25;
+    margin-inline: 10px;
+}
+
+.seminare-nazov .ciarka {
+    font-weight: 400;
+}
+
+.seminar-recnik {
+    font-weight: 400;
+    color: #f1cb75;
+}
+
+.seminare a {
+    align-self: center;
+}
+
+.button-seminare {
+    border: 2px solid #F9B821;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.button-seminare:hover {
+    background-color: #F9B821;
+}
+
+.seminare .den-v-tyzdni {
+    margin-top: 14px;
+}
 
 
 /* PROGRAM */
@@ -738,7 +822,7 @@ tbody {
     color: #fffd;
 }
 
-.program-kapela, .program-recnik, .hlavny-program-label, .program-nazov, .program-share {
+.program-kapela, .hlavny-program-label, .program-nazov, .program-share {
     color: #fff;
 }
 
@@ -1111,6 +1195,20 @@ tbody {
 
     .recnici:before {
         left: 0;
+    }
+
+    .seminare .den-v-tyzdni {
+        left: calc(9vw * 4);
+    }
+
+    .seminare-nazov {
+        font-size: 20px;
+        margin: 20px;
+        margin-inline: 70px;
+    }
+
+    .seminare:before {
+        left: -10%;
     }
 
     .program table {

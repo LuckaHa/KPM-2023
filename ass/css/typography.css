@@ -129,6 +129,7 @@ nav ul {
     position: relative;
     z-index: 5;
     color: #F9B821;
+    text-shadow: 5px 5px 10px black;
     align-self: flex-start;
     left: calc(4vw * 4);
     bottom: 6px;
@@ -147,6 +148,10 @@ nav ul {
 }
 
 @media screen and (min-width: 769px) {
+    .den-v-tyzdni {
+        left: calc(5vw * 4);
+    }
+
     .nazov-kapely {
         font-size: 38rem;
     }
@@ -160,6 +165,7 @@ nav ul {
     position: relative;
     z-index: 5;
     color: #F9B821;
+    text-shadow: 5px 5px 10px black;
     align-self: flex-start;
     bottom: 33px;
 }

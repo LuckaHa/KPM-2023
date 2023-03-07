@@ -702,7 +702,6 @@ background-position: top right;
 .seminare-nazov {
     font-weight: 700;
     line-height: 1.25;
-    margin-inline: 10px;
 }
 
 .seminare-nazov .ciarka {
@@ -737,6 +736,67 @@ background-position: top right;
 
 .seminare .den-v-tyzdni {
     margin-top: 14px;
+}
+
+
+/* SEMINARE modalne okno */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 6;
+    left: -0.8%;
+    top: -6%;
+    width: 35%;
+    height: 106%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4);
+}
+  
+/* Modal Content/Box */
+.modal-content {
+    background-color: black;
+    margin: 160px auto; 
+    padding: 20px;
+    border: 2px solid #F9B821;
+    width: 90%; 
+    height: 67%;
+}
+
+/* Button Style */
+.btn-seminar {
+    font-weight: 700;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 769px) {
+    .modal {
+        top: 0;
+        width: 35%;
+        height: 100%;
+        overflow: auto; /* Enable scroll if needed */
+    }
+
+    .modal-content {
+        margin: 160px auto; 
+        padding: 20px;
+        width: 35%; 
+        height: 55%;
+    }
 }
 
 

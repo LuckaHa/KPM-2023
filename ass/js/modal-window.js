@@ -48,7 +48,11 @@ window.onload = function() {
 };
 
 window.onclick = function(event) {
+    // When the user clicks outside the modal, close the modal and show arrows
     if (event.target === modalparent[event.target.getAttribute('data-index')]) {
         modalparent[event.target.getAttribute('data-index')].style.display = "none";
+        for (j = 0; j < arrow.length; j++) {
+            arrow[j].style.display = "block";
+        }
     }
 };

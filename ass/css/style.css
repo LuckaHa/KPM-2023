@@ -719,9 +719,15 @@ background-position: top right;
 }
 
 .button-seminare {
-    border: 2px solid #F9B821;
+    /* 
+    Prepisat, ked bude button aktivny:
+    border: 2px solid #F9B821; 
     background-color: rgba(249, 184, 33, 0.2);
     color: white;
+    */
+    border: 2px solid black;
+    background-color: rgba(190, 190, 190, 0.5);
+    color: black;
     padding: 10px 15px;
     text-align: center;
     text-decoration: none;
@@ -732,9 +738,12 @@ background-position: top right;
     cursor: pointer;
   }
 
+/* 
+Odkomentovat, ked bude button aktivny:
 .button-seminare:hover {
     background-color: #F9B821;
-}
+} 
+*/
 
 .seminare .den-v-tyzdni {
     bottom: -8px;
@@ -817,8 +826,11 @@ background-position: top right;
 
     .modal-content {
         margin: 160px auto; 
-        padding: 20px;
         width: 35%; 
+    }
+
+    .fotka-seminaristu {
+        max-height: 390px;
     }
 }
 

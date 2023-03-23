@@ -74,6 +74,7 @@ html.fp-enabled,
     width: 0;
     height: 0;
     border-style: solid;
+    display: block;
 }
 .fp-arrow.fp-prev {
     border-width: 33.5px 32px 33.5px 0;

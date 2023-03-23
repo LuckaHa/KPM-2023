@@ -56,6 +56,7 @@
           <li class="items"><a href="#recnici"      class="links">Rečníci</a></li>
           <li class="items"><a href="#kapely"      class="links">Kapely</a></li>
           <li class="items"><a href="#program"      class="links">Program</a></li>
+          <li class="items"><a href="#seminare"     class="links">Semináre</a></li>
           <li class="items"><a href="#registracia"   class="links">Registrácia</a></li>
           <li class="items"><a href="#miesto-kontakt"          class="links">Miesto a kontakt</a></li>
         </ul>
@@ -66,6 +67,15 @@
           <span class="bar"></span>
         </div>
       </div>
+
+      <script>
+        // pri uzsich obrazovkach pridat medzeru
+        function add_br(elementId) {
+            if (screen.width < 769) {
+                document.getElementById(elementId).appendChild(document.createElement('br'));
+            }
+        }
+    </script>
 
 
 <main id="fullpage">
@@ -202,40 +212,46 @@
         
         <h1 class="hlavnynadpis">Kapely</h1>
 
-        <div class="slide kapely-slide kapely-slide1">
-            
+        <div class="slide kapely-slide kapely-slide5">            
+            <div class="jadro-kapely">
+                <div class="fotka-kapely rijola"></div>
+                <h1 class="nazov-kapely">Rijola</h1>
+            </div>           
+        </div>
+
+        <div class="slide kapely-slide kapely-slide6">            
+            <div class="jadro-kapely">
+                <div class="fotka-kapely tigh"></div>
+                <h1 class="nazov-kapely">Till I Get Home</h1>
+            </div>           
+        </div>
+
+        <div class="slide kapely-slide kapely-slide1">   
             <div class="jadro-kapely">
                 <div class="fotka-kapely espe"></div>
                 <h1 class="nazov-kapely">ESPÉ</h1>
             </div>
-            
         </div>
 
         <div class="slide kapely-slide kapely-slide2">
-
             <div class="jadro-kapely">
                 <div class="fotka-kapely zilincania"></div>
-                <h1 class="nazov-kapely">ECAVZA & <br> Za Kostolom <br> Worship</h1>
-            </div>
-            
+                <h1 class="nazov-kapely">ECAV ZA <br> & CB ZA <br> Worship</h1>
+            </div>            
         </div>
                
-        <div class="slide kapely-slide kapely-slide3">
-            
+        <div class="slide kapely-slide kapely-slide3">          
             <div class="jadro-kapely">
                 <div class="fotka-kapely david"></div>
                 <h1 class="nazov-kapely"><br>Dávid Vaško <br> Band</h1>
             </div>
-
         </div>
 
-        <div class="slide kapely-slide kapely-slide4">
-            
+        <div class="slide kapely-slide kapely-slide4">            
             <div class="jadro-kapely">
                 <div class="fotka-kapely kpm-band"></div>
                 <h1 class="nazov-kapely">KPM Band</h1>
-            </div>
-            
+            </div>           
         </div>
 
     </section>
@@ -254,7 +270,7 @@
                         <div class="program-cas">13:00</div>
                     </td>
                     <td>
-                        <div class="program-registracia">Registrácia</div>
+                        <div class="program-registracia">Spustenie registrácie</div>
                     </td>
                 </tr>
                 <tr>
@@ -265,7 +281,7 @@
                         <p class="hlavny-program-label">Hlavný program </p> 
                         <p class="program-nazov">Posol nádeje</p>
                         <div class="program-recnik"><span class="ciarka">|</span> Peťka Šulková</div>
-                        <div class="program-kapela">ECAV ZA & ZA KOSTOLOM WORSHIP</div>
+                        <div class="program-kapela">ECAV ZA & CB ZA WORSHIP</div>
                     </td>
                 </tr>
                 <tr>
@@ -274,6 +290,8 @@
                     </td>
                     <td>
                         <div class="program-kafeem">Ka • Fé • eM</div>
+                        <div class="program-kapela">Till I Get Home</div>
+                        <div class="program-recnik">Pop kvíz</div>
                     </td>
                 </tr>
             </table>
@@ -293,7 +311,6 @@
                         <div class="program-recnik"><span class="ciarka">| </span>podcast live</div>
                         <div class="program-kapela">Dávid Vaško Band</div>
                     </td>
-                    <!-- TODO: add correct links like this: <td><a href="#">8:00</a></td> -->
                 </tr>
                 <tr>
                     <td>
@@ -323,7 +340,15 @@
                         <div class="program-cas">15:30</div>
                     </td>
                     <td>
-                        <div class="program-seminare">Semináre</div>
+                        <div class="program-seminare">Semináre | 1. blok</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="program-cas">17:00</div>
+                    </td>
+                    <td>
+                        <div class="program-seminare">Semináre | 2. blok</div>
                     </td>
                 </tr>
                 <tr>
@@ -351,6 +376,7 @@
                     </td>
                     <td>
                         <div class="program-kafeem">Ka • Fé • eM</div>
+                        <div class="program-recnik">Zabudnuté cesty</div>
                     </td>
                 </tr>
             </table>
@@ -370,14 +396,13 @@
                         <div class="program-recnik"><span class="ciarka">| </span>Slavo Slávik</div>
                         <div class="program-kapela">KPM Band</div>
                     </td>
-                    <!-- TODO: add correct links like this: <td><a href="#">8:00</a></td> -->
                 </tr>
                 <tr>
                     <td>
                         <div class="program-cas">11:00</div>
                     </td>
                     <td>
-                        <div class="program-share">Share Plus</div>
+                        <div class="program-share">Panelová diskusia</div>
                     </td>
                 </tr>
                 <tr>
@@ -402,7 +427,23 @@
                         <div class="program-cas">15:30</div>
                     </td>
                     <td>
-                        <div class="program-seminare">Semináre</div>
+                        <div class="program-seminare">Workshopy | 1. blok</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="program-cas">16:15</div>
+                    </td>
+                    <td>
+                        <div class="program-seminare">Workshopy | 2. blok</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="program-cas">17:00</div>
+                    </td>
+                    <td>
+                        <div class="program-seminare">Workshopy | 3. blok</div>
                     </td>
                 </tr>
                 <tr>
@@ -421,7 +462,7 @@
                         <p class="hlavny-program-label">Hlavný program </p> 
                         <p class="program-nazov">Zasvieť</p>
                         <div class="program-recnik"><span class="ciarka">| </span>Zuzka Džubakovská</div>
-                        <!-- <div class="program-kapela">KPM Band</div> -->
+                        <div class="program-kapela">Rijola</div>
                     </td>
                 </tr>
                 <tr>
@@ -469,21 +510,506 @@
 
     </section>
 
+
+    <section class="section seminare">
+        
+        <h1 class="hlavnynadpis">Semináre</h1>
+
+        <!-- Seminare - PIATOK -->
+        <div class="slide slide1">
+            <div class="jadro">
+                <div class="jadro-seminare">
+                    <p id="sem1" class="seminare-nazov">
+                        <button class="btn-seminar">Ježišova Biblia</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Tyler Patty</span><br><br>
+
+                        <button class="btn-seminar">Ako byť dobrým vedúcim vďaka zdravému vzťahu / tomu, že nemám vzťah</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Peter Hrubo</span><br><br>
+
+                        <button class="btn-seminar">Kresťanstvo pod paľbou</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Richard Nagypal</span><br><br>
+
+                        <button class="btn-seminar">Dekonštrukcia viery</button> 
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Zabudnuté cesty</span><br><br>
+
+                        <button class="btn-seminar">Prečo by kresťania nemali ignorovať otázku duševného zdravia</button> 
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Katarína Pončáková</span><br><br>
+
+                        <button class="btn-seminar">Nie pornu</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Pete Lupton</span><br>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Viac o piatkovych seminaroch -->
+            <div class="modal-seminar modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Ježišova Biblia</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Tyler Patty</span><br><br>
+                    <p class="scroll">Akú Bibliu si čítal Ježiš? Zápasíš s otázkami či celými pasážami zo Starého zákona a chcel by si vedieť odpovede? 
+                        Tento seminár možno neodhalí tajomstvá Starého zákona, ale vysvetlí jeho srdce. Tento seminár bude v čestine.</p>
+                    <br>
+                    <img src="ass/img/sem-tyler.jpg" class="fotka-seminaristu" alt="Tyler">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Ako byť dobrým vedúcim vďaka zdravému vzťahu / tomu, že nemám vzťah</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Peter Hrubo</span><br><br>
+                    <p class="scroll">Je možné, že aj náš stav (slobodný, zadaný, manželský) môže byť výhodou pre náš štýl vedenia? Ani jedno ani druhé nemusí byť bremenom alebo preferovaným požehnaním.</p>
+                    <br>
+                    <img src="ass/img/sem-peto.jpg" class="fotka-seminaristu" alt="Peto">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Kresťanstvo pod paľbou</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Richard Nagypal</span><br><br>
+                    <p class="scroll">Obraňovať vieru je ako byť lekárom. Musíš mať po ruke vercajg s liekmi a vedieť, ktoré kedy použiť. Strieľa sa na rôznych frontoch. 
+                        Máš pripravenú výstroj alebo držíš v ruke papek? Na tomto seminári budeme rozoberať 10 najsilnejších námietok proti kresťanstvu a odpovede, ktoré kresťanstvo ponúka. 
+                        Budeme sa učiť ako s ľuďmi o viere hovoriť, čo povedať, keď nevieš, čo povedať, porozprávam ti moje trápne momenty na ateistických pivách. 
+                        Dozvieš sa ako apologetika môže budovať tvoju vieru alebo vieru tvojich mládežníkov.
+                        Príď si obrúsiť svoje nástroje a vylepšiť svoju výbavu, ktorá ti pomôže <em>„byť pripravený dať odpoveď každému, kto sa pýta na dôvod tvojej nádeje." (1Pt 3:15)</em></p>
+                    <br>
+                    <img src="ass/img/sem-richard.jpg" class="fotka-seminaristu" alt="Richard">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Dekonštrukcia viery</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Zabudnuté cesty</span><br><br>
+                    <p class="scroll">Zo série podcastu <em>Dekonštrukcia</em>, v ktorej Janči a José oprašujú často zanúdanú cestu dekonštrukcie viery.</p>
+                    <br>
+                    <img src="ass/img/sem-janci-jose.jpg" class="fotka-seminaristu" alt="Janči a José">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Prečo by kresťania nemali ignorovať otázku duševného zdravia</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Katarína Pončáková</span><br><br>
+                    <p class="scroll">V kresťanskom svete sa často stáva, že otázka mentálneho zdravia je zanedbávaná, pociťovať úzkosť je zlyhaním, ísť k psychológovi hanbou. 
+                        Je to prejav nedôvery Pánu Bohu alebo múdre riešenie? Ako sa starať o svoju dušu a duše svojich mládežníkov rovnako poctivo ako o svojho ducha?</p>
+                    <br>
+                    <img src="ass/img/sem-katka.jpg" class="fotka-seminaristu" alt="Katka">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Nie pornu</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Pete Lupton</span><br><br>
+                    <p class="scroll">Ľahko sa k nemu dostať, ťažko z neho von. S pornografiou sa spájajú hlboké pocity viny a hanby. 
+                        Na tomto seminári zakladateľ portálu <em>nepornu.cz</em> prinesie nádej, že bojovať sa oplatí. Tento seminár bude v češtine.</p>
+                    <br>
+                    <img src="ass/img/sem-pete.jpg" class="fotka-seminaristu" alt="Pete">
+                </div>
+            </div>
+            <!-- Viac o piatkovych seminaroch - end -->
+
+            <h1 class="den-v-tyzdni">PIATOK</h1>
+
+            <a href=#>
+                <button class="button-seminare">Prihlás sa na seminár</button>
+            </a>
+        </div>
+        <!-- Seminare - PIATOK - end -->
+
+        <!-- Seminare - SOBOTA 1. cast -->
+        <div class="slide slide2">
+            <div class="jadro">
+                <div class="jadro-seminare">
+                    <p id="sem2" class="seminare-nazov">
+                        <button class="btn-seminar">Ako vytvárať bezpečný priestor</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Claire Patty</span><br><br>
+
+                        <button class="btn-seminar">Zaraď nový prevod vo vedení tímu [Vedenie tímu metódou Gear Shift]</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Timo Máhrik</span><br><br>
+
+                        <button class="btn-seminar">Z bodu A do bodu B</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Baška Benešová</span><br><br>
+
+                        <button class="btn-seminar">Čistota: BOyZ</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Tomáš Henžel</span><br><br>
+
+                        <button class="btn-seminar">Čistota: GiRLz</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Zuzka Džubakovská</span><br><br>
+
+                        <button class="btn-seminar">Skončí "tábor" a čo? (od tábora k mládeži)</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Adam Ďuračka a Beny Šramo</span><br><br>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Viac o sobotnajsich seminaroch - 1.cast -->
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Ako vytvárať bezpečný priestor</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Claire Patty</span><br><br>
+                    <p class="scroll">Ak pre teba nie je úplne prirodzené milovať ľudí cez záujem, láskavú starostlivosť a hlboké otázy, 
+                        toto je seminár pre teba. Pre mizantropov, aj všetkých ostatných.</p>
+                    <br>
+                    <img src="ass/img/sem-claire.jpg" class="fotka-seminaristu" alt="Claire">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Zaraď nový prevod vo vedení tímu [Vedenie tímu metódou Gear Shift]</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Timo Máhrik</span><br><br>
+                    <p class="scroll">Ak máš pocit, že tvoj tím stagnuje, nikto ti neodpovedá na otázky a dokonca máš pocit, že sa ani dobre nepoznáte, 
+                        na Timovom seminári sa naučíš, ako posunúť svoj tím na nový level. </p>
+                    <br>
+                    <img src="ass/img/sem-timo.jpg" class="fotka-seminaristu" alt="Timo">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Z bodu A do bodu B</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Baška Benešová</span><br><br>
+                    <p class="scroll">Na tomto seminári dostaneš príležitosť zanalyzovať svoju službu a vytvoriť bojový plán čo ďalej. 
+                        Budú ti predstavené rôzne materiály a zdroje, ktoré ti pomôžu posunúť sa ďalej.</p>
+                    <br>
+                    <img src="ass/img/sem-baska.jpg" class="fotka-seminaristu" alt="Baška">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Čistota: BOyZ</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Tomáš Henžel</span><br><br>
+                    <p class="scroll">Hádam nie je človeka, ktorý by v nejakej miere neriešil oblasť sexuality. 
+                        Na tomto seminári sa budeme venovať tejto oblasti a bude aj priestor na otázky.</p>
+                    <br>
+                    <img src="ass/img/sem-tomas.jpg" class="fotka-seminaristu" alt="Tomáš">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Čistota: GiRLz</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Zuzka Džubakovská</span><br><br>
+                    <p class="scroll">Hádam nie je človeka, ktorý by v nejakej miere neriešil oblasť sexuality. 
+                        Na tomto seminári sa budeme venovať tejto oblasti a bude aj priestor na otázky.</p>
+                    <br>
+                    <img src="ass/img/sem-zuzka.jpg" class="fotka-seminaristu" alt="Zuzka">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Skončí "tábor" a čo? (od tábora k mládeži)</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Adam Ďuračka a Beny Šramo</span><br><br>
+                    <p class="scroll">Plný tábor nových študentov a na mládeži nikto. Ako sa starať o nových ľudí tak, aby sa chceli zapojiť do cirkvi.</p>
+                    <br>
+                    <img src="ass/img/sem-beny-adam.jpg" class="fotka-seminaristu" alt="Beny a Adam">
+                </div>
+            </div>
+            <!-- Viac o sobotnajsich seminaroch - 1.cast - end -->
+
+            <h1 class="den-v-tyzdni">SOBOTA (1. časť)</h1>
+
+            <a href=#>
+                <button class="button-seminare">Prihlás sa na seminár</button>
+            </a>
+        </div>
+        <!-- Seminare - SOBOTA 1. cast - end -->
+
+        <!-- Seminare - SOBOTA 2. cast -->
+        <div class="slide slide3">
+            <div class="jadro">
+                <div class="jadro-seminare">
+                    <p id="sem3" class="seminare-nazov">
+                        <button class="btn-seminar">Tipy ako evanjelizovať prirodzene a odvážne</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Agi Šulka</span><br><br>
+
+                        <button class="btn-seminar">Evanjelium: agnostici a ateisti</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">David Kostlán</span><br><br>
+
+                        <button class="btn-seminar">Evanjelium: sediaci v kostole a stratení</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Marián Kaňuch</span><br><br>
+
+                        <button class="btn-seminar">Moje a Božie plecia</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Mark Abrman</span><br><br>
+
+                        <button class="btn-seminar">Ako povedať svoj príbeh</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Daniel Harčar</span><br><br>
+
+                        <button class="btn-seminar">Ako sa popasovať s bludmi</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Peter Hrubo</span><br><br>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Viac o sobotnajsich seminaroch - 2.cast -->
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Tipy ako evanjelizovať prirodzene a odvážne</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Agi Šulka</span><br><br>
+                    <p class="scroll">Ak vieš, že evanjelizácie nie je tvoje forte, no napriek rozumieš, 
+                        že je to tvoja úloha, príď sa inšpirovať nápadmi od Agiho.</p>
+                    <br>
+                    <img src="ass/img/sem-agi.jpg" class="fotka-seminaristu" alt="Agi">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Evanjelium: agnostici a ateisti</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">David Kostlán</span><br><br>
+                    <p class="scroll">Keď počujeme: ja som ateista, ja som agnostik... možno máme pocit, že nám práve niekto zavrel dvere pred nosom. 
+                        Je to ale naozaj tak? Aké mentálne bariéry potrebujeme prekonať, aby sme priniesli evanjelium tejto skupine ľudí?</p>
+                    <br>
+                    <img src="ass/img/sem-david.jpg" class="fotka-seminaristu" alt="David">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Evanjelium: sediaci v kostole a stratení</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Marián Kaňuch</span><br><br>
+                    <p class="scroll">Náboženstvo vs. osobný vzťah s Pánom Bohom. Je možné chodiť do kostola pomerne pravidelne a predsa vôbec nerozumieť evanjeliu? 
+                        Ako sa dostať cez nánosy religionizmu k srdcu človeka?</p>
+                    <br>
+                    <img src="ass/img/sem-marian.jpg" class="fotka-seminaristu" alt="Marián">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Moje a Božie plecia</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Mark Abrman</span><br><br>
+                    <p class="scroll">Ak je celá téma tejto konferencia pre teba mierne ťaživá a máš pocit, že ti na plecia kladieme príliš veľký náklad, 
+                        príď sa na tento seminár presvedčiť o opaku a zisti, čo prináleží robiť tebe a čo už je na Božích pleciach.</p>
+                    <br>
+                    <img src="ass/img/sem-mark.jpg" class="fotka-seminaristu" alt="Mark">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Ako povedať svoj príbeh</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Daniel Harčar</span><br><br>
+                    <p class="scroll">Je veľmi múdre mať pripravený svoj príbeh, ak oň ľudia prejavia záujem. 
+                        Prekvapujúco to nie je až také ľahké, hlavne ak by mali byť tie príbehy tri...</p>
+                    <br>
+                    <img src="ass/img/sem-daniel.jpg" class="fotka-seminaristu" alt="Daniel">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content sem-sobota">
+                    <span class="close">&times;</span>
+                    <h2>Ako sa popasovať s bludmi</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Peter Hrubo</span><br><br>
+                    <p class="scroll">Antivaxeri, politické hoaxy, manipulácie, relativizovanie pravdy, konšpirácie... 
+                        Pracovať na svojom kritickom myslení nikdy nebolo dôležitejšie ako v dnešnej dobe. Príď si mentálne zacvičiť.</p>
+                    <br>
+                    <img src="ass/img/sem-peto.jpg" class="fotka-seminaristu" alt="Peťo">
+                </div>
+            </div>
+            <!-- Viac o sobotnajsich seminaroch - 2.cast - end -->
+
+            <h1 class="den-v-tyzdni">SOBOTA (2. časť)</h1>
+
+            <a href=#>
+                <button class="button-seminare">Prihlás sa na seminár</button>
+            </a>
+        </div>
+        <!-- Seminare - SOBOTA 2. cast - end -->
+
+        <!-- Seminare - SOBOTA 3. cast -->
+        <div class="slide slide4">
+            <div class="jadro">
+                <div class="jadro-seminare">
+                    <p id="sem4" class="seminare-nazov">
+                        <button class="btn-seminar">Ako byť poslom nádeje doma</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Zuzana Belancová</span><br><br>
+
+                        <button class="btn-seminar">Ako byť poslom nádeje cez svoje hobby</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Josh a Alica Howard</span><br><br>
+
+                        <button class="btn-seminar">Ako sa modliť s človekom modlitbu spasenia</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Viktor Valentini</span><br><br>
+
+                        <button class="btn-seminar">Ako začať a rozvíjať učenícky vzťah alebo skupinku (pre chalpcov)</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Mike Sullivan</span><br><br>
+
+                        <button class="btn-seminar">Ako začať a rozvíjať učenícky vzťah alebo skupinku (pre dievčatá)</button>
+                        <br>
+                        <span class="ciarka">|</span> 
+                        <span class="seminar-recnik">Amy Chase</span><br><br>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Viac o sobotnajsich seminaroch - 3.cast - end -->
+            <div class="modal-seminar modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Ako byť poslom nádeje doma</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Zuzana Belancová</span><br><br>
+                    <p class="scroll">Nikto nie je prorokom vo svojej otčine. Niekedy je najťažšie povedať evanjelium vo svojej vlastnej rodine. 
+                        Príď sa inšpirovať Zuzkiným príbehom o tom, že je to možné.</p>
+                    <br>
+                    <img src="ass/img/sem-zuzka-b.jpg" class="fotka-seminaristu" alt="Zuzka">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Ako byť poslom nádeje cez svoje hobby</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Josh a Alica Howard</span><br><br>
+                    <p class="scroll">Miluješ autá? Šport? Korčuľovanie? Rád pečieš? Máš rada motorky a hokej? 
+                        Príď na Joshov a Alicin seminár a inšpiruj sa, ako aj tvoje hobby môžu byť nástrojom na šírenie dobrej správy.</p>
+                    <br>
+                    <img src="ass/img/sem-josh.jpg" class="fotka-seminaristu" alt="Josh">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Ako sa modliť s človekom modlitbu spasenia</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Viktor Valentini</span><br><br>
+                    <p class="scroll">Stalo sa ti už, že človek bol absolútne pripravený prijať Pána Ježiša a ty si nevedel, čo máš robiť? 
+                        Príď sa to naučiť a vyskúšať si to na tomto seminári.</p>
+                    <br>
+                    <img src="ass/img/sem-viktor.jpg" class="fotka-seminaristu" alt="Viktor">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Ako začať a rozvíjať učenícky vzťah alebo skupinku (pre chalpcov)</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Mike Sullivan</span><br><br>
+                    <p class="scroll">Možno máš na srdci nejaké meno. Pán Boh ti kladie konkrétnych ľudí na srdce. 
+                        Ako sa posunúť z kamarátstva do učeníckeho vzťahu, ktorý by priniesol ovocie.</p>
+                    <br>
+                    <img src="ass/img/sem-mike.jpg" class="fotka-seminaristu" alt="Mike">
+                </div>
+            </div>
+
+            <div class="modal-seminar modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Ako začať a rozvíjať učenícky vzťah alebo skupinku (pre dievčatá)</h2>
+                    <span class="ciarka">|</span> 
+                    <span class="seminar-recnik">Amy Chase</span><br><br>
+                    <p class="scroll">Možno máš na srdci nejaké meno. Pán Boh ti kladie konkrétnych ľudí na srdce. 
+                        Ako sa posunúť z kamarátstva do učeníckeho vzťahu, ktorý by priniesol ovocie.</p>
+                    <br>
+                    <img src="ass/img/sem-amy.jpg" class="fotka-seminaristu" alt="Amy">
+                </div>
+            </div>
+            <!-- Viac o sobotnajsich seminaroch - 3.cast - end -->
+
+            <h1 class="den-v-tyzdni">SOBOTA (3. časť)</h1>
+
+            <a href=#>
+                <button class="button-seminare">Prihlás sa na seminár</button>
+            </a>
+        </div>
+        <!-- Seminare - SOBOTA 3. cast -->
+
+    </section>
+
+
     <section class="section sekcia8 registracia">
         <h1 class="hlavnynadpis">Registrácia</h1>
         
         <div class="slide registracia-slide1">
             <div class="jadro">
                 <div class="jadro-popis">
-                    <script>
-                        // pri uzsich obrazovkach pridat medzeru
-                        function add_br() {
-                            if (screen.width < 769) {
-                            document.getElementById('em_reg').appendChild(document.createElement('br'));
-                        }
-                        }
-                    </script>
-
                     <p>
                         <b>Konferenčný poplatok:</b><br>
                         Ak sa prihlásiš do 28.2 - 35€<br>
@@ -493,23 +1019,23 @@
                             Registrácia končí 31.3.2023<br><br>
                         </span>
 
-                        <em id="em_reg">
+                        <em id="reg">
                             <span id="zlta">IBAN:</span>
-                            <script>add_br();</script>
+                            <script>add_br('reg');</script>
                             <span id="zlta">SK24 8330 0000 0020 0015 0040<br></span>
 
                             Variabilný symbol:
-                            <script>add_br();</script>
+                            <script>add_br('reg');</script>
                             Tvoje ID
-                            <script>add_br();</script>
+                            <script>add_br('reg');</script>
                             <small>(príde ti emailom po registrovaní sa)</small><br>
 
                             <span id="jemne-siva">Špecifický symbol:</span>
-                            <script>add_br();</script>
+                            <script>add_br('reg');</script>
                             <span id="jemne-siva">1111<br></span>
 
                             <span id="zlta">Konštantný symbol:</span> 
-                            <script>add_br();</script>
+                            <script>add_br('reg');</script>
                             <span id="zlta" class="podvpravo"> 0558</span></span>
                         </em>
                     </p>
@@ -585,6 +1111,7 @@
 
 
     <script src="ass/js/fullpage.js"></script>
+    <script src="ass/js/modal-window.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" 
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" 
@@ -602,7 +1129,7 @@
         licenseKey: '3EHL9-607I9-76KH8-J0946-NUUUQ',
         menu: '#menu',
         lockAnchors: false,
-        anchors:['vitajte', 'o-kpm', 'recnici', 'kapely', 'program', 'registracia', 'miesto-kontakt'],
+        anchors:['vitajte', 'o-kpm', 'recnici', 'kapely', 'program', 'seminare', 'registracia', 'miesto-kontakt'],
         navigation: false,
         navigationPosition: 'right',
         navigationTooltips: ['', ''],

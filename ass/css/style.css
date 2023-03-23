@@ -474,6 +474,16 @@ background-position: top right;
     left: -23%;
 }
 
+.rijola {
+    background-image: url("../img/kapela-rijola-09.png");
+    background-size: 120%;
+}
+
+.tigh {
+    background-image: url("../img/kapela-tigh-09.png");
+    background-size: 120%;
+}
+
 @media screen and (min-width: 769px) {
     .kapely:before {
         right: 0;
